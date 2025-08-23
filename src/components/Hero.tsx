@@ -39,6 +39,9 @@ const Hero = () => {
           <Button variant="secondary" asChild>
             <a href="#contact">Contact Me</a>
           </Button>
+          <Button asChild>
+            <a href="https://drive.google.com/file/d/1udDJB9URca3NiI9aXNM85oY3542nKsqk/view?usp=sharing" target="_blank" rel="noopener noreferrer">See CV</a>
+          </Button>
         </motion.div>
       </div>
       <motion.div

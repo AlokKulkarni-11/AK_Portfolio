@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 import { Toaster } from "react-hot-toast";
 
@@ -16,29 +16,15 @@ const Contact = () => {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/AlokKulkarni-11"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <FaGithub className="w-8 h-8" />
             </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              <FaLinkedin className="w-8 h-8" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              <FaTwitter className="w-8 h-8" />
-            </a>
+            
+            
           </div>
         </div>
         <ContactForm />

@@ -5,11 +5,11 @@ const Footer = () => {
     <footer className="w-full py-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-          &copy; {new Date().getFullYear()} Alok Kumar. All rights reserved.
+          &copy; {new Date().getFullYear()} Alok Kulkarni. All rights reserved.
         </p>
         <div className="flex gap-4">
           <a
-            href="#"
+            href="https://github.com/AlokKulkarni-11"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
@@ -17,21 +17,14 @@ const Footer = () => {
             <FaGithub className="w-6 h-6" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/alok-kulkarni-499259296/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <FaLinkedin className="w-6 h-6" />
           </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <FaTwitter className="w-6 h-6" />
-          </a>
+          
         </div>
       </div>
     </footer>

@@ -23,8 +23,14 @@ const Contact = () => {
             >
               <FaGithub className="w-8 h-8" />
             </a>
-            
-            
+            <a
+              href="https://www.linkedin.com/in/alok-kulkarni-499259296/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <FaLinkedin className="w-8 h-8" />
+            </a>
           </div>
         </div>
         <ContactForm />

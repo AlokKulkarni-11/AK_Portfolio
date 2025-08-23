@@ -1,0 +1,35 @@
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaGithub, FaFigma, FaJava, FaPython, FaLaptopCode, FaDatabase, FaWindows, FaNetworkWired, FaCode } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiTailwindcss, SiNextdotjs, SiTypescript, SiFirebase, SiFramer, SiSupabase, SiCplusplus, SiOracle, SiMysql } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+
+export const iconMap: { [key: string]: React.ElementType } = {
+  react: FaReact,
+  nextjs: SiNextdotjs,
+  typescript: SiTypescript,
+  javascript: FaJsSquare,
+  html5: FaHtml5,
+  css3: FaCss3Alt,
+  tailwindcss: SiTailwindcss,
+  framer: SiFramer,
+  nodejs: FaNodeJs,
+  express: SiExpress,
+  mongodb: SiMongodb,
+  firebase: SiFirebase,
+  git: FaGitAlt,
+  github: FaGithub,
+  vscode: VscVscode,
+  figma: FaFigma,
+  supabase: SiSupabase,
+  java: FaJava,
+  "c++": SiCplusplus,
+  python: FaPython,
+  oracle: SiOracle,
+  mysql: SiMysql,
+  oops: FaLaptopCode,
+  dbms: FaDatabase,
+  os: FaWindows,
+  cn: FaNetworkWired,
+  dsa: FaCode,
+  rest: FaCode,
+  postman: FaCode,
+};

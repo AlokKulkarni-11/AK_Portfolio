@@ -1,0 +1,58 @@
+export const projects = [
+  {
+    title: "Open Nest",
+    description: "Open Nest is a hackathon team project—an AI-powered platform that connects developers to open-source projects based on skills from their GitHub profiles. It includes an AI repo analyzer, gamified badges, and a customizable skill selector for a personalized contribution experience.",
+    image: "/OpenNest.PNG",
+    tags: ["React", "MongoDB", "Express", "Node.js", "Ollama AI API", "Tailwind CSS", "Javascript", "Github API", "Vercel"],
+    liveDemo: "https://open-nest.vercel.app/",
+    github: "https://github.com/Kedar-1118/OpenNest",
+  },
+  {
+    title: "KYCc",
+    description: "KYCc is a client based project for tracking credit card spending and milestone progress through a secure, easy-to-use dashboard. Built with React, Supabase, and TailwindCSS, it features user login and will soon support PDF uploads and alerts.",
+    image: "/KYCc.PNG",
+    tags: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vercel", "Node.js"],
+    liveDemo: "https://kyc-mauve.vercel.app/",
+    github: "https://github.com/DavidAarya-31/KYCc",
+  },
+  {
+    title: "Sanctum Sanctorum",
+    description: "Sanctum Sanctorum is a personal project inspired by Doctor Strange, designed as a secure platform where users can store personal notes, links, and YouTube videos all in one place. Created to solve my own organizational challenges, it features user login functionality and will soon include a PDF uploading feature to enhance convenience and accessibility.",
+    image: "/SanctumSanctorum.PNG",
+    tags: ["Node.js", "Tailwind CSS", "Supabase", "Vercel"],
+    liveDemo: "https://sanctum-sanctorum.vercel.app/",
+    github: "https://github.com/AlokKulkarni-11/Sanctum-Sanctorum",
+  },
+  {
+    title: "PRIME",
+    description: "PRIME (Personal Response & Investment Management Engine) is an AI-powered assistant designed to streamline tasks such as real-time stock tracking and upcoming features like automated stock purchases. It aims to simplify productivity and financial management using cutting-edge AI capabilities.",
+    image: "/PRIME.PNG",
+    tags: ["Python", "Ollama AI API", "Third Party Libraries" ],
+    liveDemo: "https://github.com/AlokKulkarni-11/PRIME",
+    github: "https://github.com/AlokKulkarni-11/PRIME",
+  },
+  {
+    title: "Money Mint",
+    description: "MoneyMint is a finance-based platform that integrates payments and trading into one interface. Currently focused on the frontend, the project requires significant backend development to complete its functionality.",
+    image: "/MoneyMint.PNG",
+    tags: ["HTML", "CSS", "Javascript", "Trading API","Github Pages"],
+    liveDemo: "https://alokkulkarni-11.github.io/Wealth_Wizards/home3.html",
+    github: "https://github.com/AlokKulkarni-11/Wealth_Wizards",
+  },
+  {
+    title: "Alok Kulkarni Portfolio (Old)",
+    description: "AK Portfolio is a personal project—a professional resume portfolio that showcases my technical expertise, project experience, and leadership roles. Designed with a clean, user-focused layout, it highlights accomplishments across software development, event management, and strategic initiatives—serving as a comprehensive reflection of my professional journey and skills.",
+    image: "/OldPortfolio.PNG",
+    tags: ["HTML", "CSS", "Javascript", "Github Pages", "ParticleJS JSON"],
+    liveDemo: "https://alokkulkarni-11.github.io/AKPortfolio/#/",
+    github: "https://github.com/AlokKulkarni-11/AKPortfolio",
+  },
+  {
+    title: "Cash Calci",
+    description: "Cash Calci is a versatile calculator application designed to manage and track expenses. It offers features for calculating financial data and monitoring spending, helping users maintain better control over their finances.",
+    image: "/CashCalci.PNG",
+    tags: ["C++", "OOPs"],
+    liveDemo: "https://github.com/rugved0014/The-Alpha-Titans-rep",
+    github: "https://github.com/rugved0014/The-Alpha-Titans-rep",
+  }
+];

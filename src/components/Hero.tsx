@@ -21,11 +21,19 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-2xl"
         >
-          I am a{" "}
-          <Typewriter
-            words={["CSE Student at WCE", "Database Developer", "Full Stack Developer"]}
-            loop={true}
-          />
+        <Typewriter
+          words={[
+            "Student at WCE", 
+            "Developer", 
+            "Absolute Learner"
+          ]}
+          loop={true}
+          cursor
+          cursorStyle="|"
+          typeSpeed={90}
+          deleteSpeed={50}
+          // delaySpeed={1000}
+        />
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

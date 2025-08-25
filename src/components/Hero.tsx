@@ -23,15 +23,13 @@ const Hero = () => {
         >
         <Typewriter
           words={[
-            "Student at WCE", 
-            "Developer", 
-            "Absolute Learner"
+            "Computer Engineering student building software solutions to solve real-world problems." 
           ]}
           loop={true}
           cursor
           cursorStyle="|"
-          typeSpeed={90}
-          deleteSpeed={50}
+          typeSpeed={70}
+          deleteSpeed={30}
           // delaySpeed={1000}
         />
         </motion.p>

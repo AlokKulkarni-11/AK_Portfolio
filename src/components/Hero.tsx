@@ -1,0 +1,95 @@
+import { useEffect, useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
+import { Button } from "./ui/button";
+import { ChevronDown } from "lucide-react";
+
+const DEFAULT_CV_URL =
+  "https://drive.google.com/file/d/1udDJB9URca3NiI9aXNM85oY3542nKsqk/view?usp=sharing";
+
+const Hero = () => {
+  const [cvUrl, setCvUrl] = useState(DEFAULT_CV_URL);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch("/portfolio-config.json")
+      .then((response) => (response.ok ? response.json() : null))
+      .then((config: { cvUrl?: unknown } | null) => {
+        if (!isMounted || typeof config?.cvUrl !== "string") return;
+
+        const nextCvUrl = config.cvUrl.trim();
+        if (nextCvUrl) {
+          setCvUrl(nextCvUrl);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          setCvUrl(DEFAULT_CV_URL);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  return (
+    <section id="hero" className="relative min-h-[70vh] flex items-center justify-center">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-5xl font-bold mb-4"
+        >
+          Hi, I'm Alok Kulkarni
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl"
+        >
+        <Typewriter
+          words={[
+            "Computer Engineering student building software solutions to solve real-world problems." 
+          ]}
+          loop={true}
+          cursor
+          cursorStyle="|"
+          typeSpeed={70}
+          deleteSpeed={30}
+          // delaySpeed={1000}
+        />
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="flex gap-4 mt-8"
+        >
+          <Button asChild>
+            <a href="#projects">Projects</a>
+          </Button>
+          <Button variant="secondary" asChild>
+            <a href="#contact">Contact Me</a>
+          </Button>
+          <Button asChild>
+            <a href={cvUrl} target="_blank" rel="noopener noreferrer">See CV</a>
+          </Button>
+        </motion.div>
+      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ repeat: Infinity, duration: 1.5, repeatType: "reverse" }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+      >
+        <ChevronDown className="w-8 h-8" />
+      </motion.div>
+    </section>
+  );
+};
+
+export default Hero;

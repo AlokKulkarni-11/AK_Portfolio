@@ -1,5 +1,5 @@
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaGithub, FaFigma, FaJava, FaPython, FaLaptopCode, FaDatabase, FaWindows, FaNetworkWired, FaCode } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss, SiNextdotjs, SiTypescript, SiFirebase, SiFramer, SiSupabase, SiCplusplus, SiOracle, SiMysql } from "react-icons/si";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaGithub, FaFigma, FaJava, FaPython, FaLaptopCode, FaDatabase, FaWindows, FaNetworkWired, FaCode, FaBrain } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiTailwindcss, SiNextdotjs, SiTypescript, SiFirebase, SiFramer, SiSupabase, SiCplusplus, SiOracle, SiMysql, SiSpringboot, SiSpring, SiPostgresql, SiVercel, SiPostman, SiDocker, SiGo } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 export const iconMap: { [key: string]: React.ElementType } = {
@@ -31,5 +31,12 @@ export const iconMap: { [key: string]: React.ElementType } = {
   cn: FaNetworkWired,
   dsa: FaCode,
   rest: FaCode,
-  postman: FaCode,
+  postman: SiPostman,
+  springboot: SiSpringboot,
+  spring: SiSpring,
+  postgresql: SiPostgresql,
+  vercel: SiVercel,
+  ml: FaBrain,
+  docker: SiDocker,
+  golang: SiGo,
 };

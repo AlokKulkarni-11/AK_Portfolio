@@ -1,21 +1,5 @@
 export const projects = [
   {
-    title: "ForgeAPI",
-    description: "ForgeAPI is a AI-powered platform that converts natural language requirements into production-ready APIs. Developed an orchestration pipeline for entity extraction, API code generation, endpoint testing, and OWASP-based security analysis. Implemented a Self-Heal feature for automated vulnerability remediation and integrated GitHub export for seamless deployment.",
-    image: "/ForgeAPI.PNG",
-    tags: ["React", "Supabase", "Express", "Node.js", "Ollama AI API", "Tailwind CSS", "Typescript", "Github API", "Vercel", "Gemini API"],
-    liveDemo: "https://forge-api-rho.vercel.app/",
-    github: "https://github.com/AlokKulkarni-11/ForgeAPI",
-  },
-  {
-    title: "WikiData",
-    description: "WikiData is a semantic domain classification system that infers the top three specific domains of a term using a dual-stream architecture combining Wikipedia dump processing and real-time API retrieval. Implemented category extraction, normalization, noise filtering, and domain-ranking pipelines in Python with CUDA-enabled acceleration for scalable semantic inference.",
-    image: "/WikiData1.PNG",
-    tags: ["Python", "Cuda", "Wikipedia API"],
-    liveDemo: "https://github.com/AlokKulkarni-11/WikiData",
-    github: "https://github.com/AlokKulkarni-11/WikiData",
-  },
-  {
     title: "Open Nexus",
     description: "Open Nexus is an AI-powered platform that connects developers to open-source projects based on skills from their GitHub profiles. It includes an AI repo analyzer, gamified badges, and a customizable skill selector for a personalized contribution experience.",
     image: "/OpenNexus.PNG",
@@ -30,6 +14,31 @@ export const projects = [
     tags: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vercel", "Node.js"],
     liveDemo: "https://kyc-mauve.vercel.app/",
     github: "https://github.com/DavidAarya-31/KYCc",
+  },
+  {
+    title: "AssetHub",
+    description: "Asset Hub is a personal wealth tracking platform providing real-time net worth clarity across gold, FDs, stocks, mutual funds, real estate, and crypto. Built a polymorphic asset/liability architecture (JOINED table inheritance, Spring Boot) with live pricing via Yahoo Finance, AMFI India, and CoinGecko APIs, plus an XIRR/CAGR financial analytics engine. Added automated alerts, maturity reminders, and family rollup dashboards with RLS-based data isolation.",
+    image: "/AssetHub.PNG",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Java", "Spring Boot", "PostgreSQL", "Supabase", "JWT", "Yahoo Finance API", "AMFI India API", "CoinGecko API", "Brevo API"],
+    liveDemo: "https://asset-hub-3jo7.vercel.app/",
+    github: "https://github.com/AlokKulkarni-11/Asset-Hub",
+  },
+  
+  {
+    title: "ForgeAPI",
+    description: "ForgeAPI is a AI-powered platform that converts natural language requirements into production-ready APIs. Developed an orchestration pipeline for entity extraction, API code generation, endpoint testing, and OWASP-based security analysis. Implemented a Self-Heal feature for automated vulnerability remediation and integrated GitHub export for seamless deployment.",
+    image: "/ForgeAPI.PNG",
+    tags: ["React", "Supabase", "Express", "Node.js", "Ollama AI API", "Tailwind CSS", "Typescript", "Github API", "Vercel", "Gemini API"],
+    liveDemo: "https://forge-api-rho.vercel.app/",
+    github: "https://github.com/AlokKulkarni-11/ForgeAPI",
+  },
+  {
+    title: "WikiData",
+    description: "WikiData is a semantic domain classification system that infers the top three specific domains of a term using a dual-stream architecture combining Wikipedia dump processing and real-time API retrieval. Implemented category extraction, normalization, noise filtering, and domain-ranking pipelines in Python with CUDA-enabled acceleration for scalable semantic inference.",
+    image: "/WikiData1.PNG",
+    tags: ["Python", "Cuda", "Wikipedia API"],
+    liveDemo: "https://github.com/AlokKulkarni-11/WikiData",
+    github: "https://github.com/AlokKulkarni-11/WikiData",
   },
   {
     title: "Sanctum Sanctorum",

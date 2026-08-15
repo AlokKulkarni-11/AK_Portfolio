@@ -31,6 +31,8 @@ export const skills = {
     { name: "Git", icon: "git" },
     { name: "GitHub", icon: "github" },
     { name: "Postman", icon: "postman" },
+    { name: "N8N", icon: "n8n" },
+    { name: "Linux", icon: "linux" },
     { name: "Vercel", icon: "vercel" },
     { name: "Docker", icon: "docker" },
   ],

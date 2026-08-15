@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { ChevronDown } from "lucide-react";
 
 const DEFAULT_CV_URL =
-  "https://drive.google.com/file/d/1udDJB9URca3NiI9aXNM85oY3542nKsqk/view?usp=sharing";
+  "https://drive.google.com/file/d/12hDT7PLZmRympK9F7mfH1LBioElkhnkj/view?usp=sharing";
 
 const Hero = () => {
   const [cvUrl, setCvUrl] = useState(DEFAULT_CV_URL);
@@ -13,7 +13,7 @@ const Hero = () => {
   useEffect(() => {
     let isMounted = true;
 
-    fetch("/portfolio-config.json")
+    fetch("/portfolio-config.json", { cache: "no-store" })
       .then((response) => (response.ok ? response.json() : null))
       .then((config: { cvUrl?: unknown } | null) => {
         if (!isMounted || typeof config?.cvUrl !== "string") return;

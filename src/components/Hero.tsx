@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { ChevronDown } from "lucide-react";
 
 const DEFAULT_CV_URL =
-  "https://drive.google.com/file/d/12hDT7PLZmRympK9F7mfH1LBioElkhnkj/view?usp=sharing";
+  "https://drive.google.com/file/d/1pBBGciVsgmbqfCRz67vVHxjlU02OEmAO/view?usp=sharing";
 
 const Hero = () => {
   const [cvUrl, setCvUrl] = useState(DEFAULT_CV_URL);

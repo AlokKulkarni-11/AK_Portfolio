@@ -1,21 +1,5 @@
 export const projects = [
   {
-    title: "Open Nexus",
-    description: "Open Nexus is an AI-powered platform that connects developers to open-source projects based on skills from their GitHub profiles. It includes an AI repo analyzer, gamified badges, and a customizable skill selector for a personalized contribution experience.",
-    image: "/OpenNexus.PNG",
-    tags: ["React", "MongoDB", "Express", "Node.js", "Gemini API", "Tailwind CSS", "Javascript", "Github API", "Vercel"],
-    liveDemo: "https://opennexus-ten.vercel.app/",
-    github: "https://github.com/DavidAarya-31/OpenNexus",
-  },
-  {
-    title: "KYCc",
-    description: "KYCc is a client based project for tracking credit card spending and milestone progress through a secure, easy-to-use dashboard. Built with React, Supabase, and TailwindCSS, it features user login and will soon support PDF uploads and alerts.",
-    image: "/KYCc.PNG",
-    tags: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vercel", "Node.js"],
-    liveDemo: "https://kyc-mauve.vercel.app/",
-    github: "https://github.com/DavidAarya-31/KYCc",
-  },
-  {
     title: "AssetHub",
     description: "Asset Hub is a personal wealth tracking platform providing real-time net worth clarity across gold, FDs, stocks, mutual funds, real estate, and crypto. Built a polymorphic asset/liability architecture (JOINED table inheritance, Spring Boot) with live pricing via Yahoo Finance, AMFI India, and CoinGecko APIs, plus an XIRR/CAGR financial analytics engine. Added automated alerts, maturity reminders, and family rollup dashboards with RLS-based data isolation.",
     image: "/AssetHub.PNG",
@@ -23,7 +7,22 @@ export const projects = [
     liveDemo: "https://asset-hub-3jo7.vercel.app/",
     github: "https://github.com/AlokKulkarni-11/Asset-Hub",
   },
-  
+  {
+    title: "KYCc",
+    description: "KYCc is a personal finance and credit card optimization platform providing real-time spend tracking, anniversary cycles, and milestone progress across multiple cards. Built a secure full-stack architecture (React, TypeScript, Supabase PostgreSQL with RLS) with an AI-powered OCR engine (Tesseract.js, PDF.js) to auto-extract transactions from receipts and bank statements, plus an AI spending anomaly advisor. Integrated an 80+ card intelligence catalog, merchant reward optimization strategies, MCC lookup guides, loyalty transfer directories, and interactive QR/milestone calculators.",
+    image: "/KYCc.PNG",
+    tags: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Vercel", "Node.js"],
+    liveDemo: "https://kyc-mauve.vercel.app/",
+    github: "https://github.com/DavidAarya-31/KYCc",
+  },
+  {
+    title: "Open Nexus",
+    description: "Open Nexus is an AI-powered platform that connects developers to open-source projects based on skills from their GitHub profiles. It includes an AI repo analyzer, gamified badges, and a customizable skill selector for a personalized contribution experience.",
+    image: "/OpenNexus.PNG",
+    tags: ["React", "MongoDB", "Express", "Node.js", "Gemini API", "Tailwind CSS", "Javascript", "Github API", "Vercel"],
+    liveDemo: "https://opennexus-ten.vercel.app/",
+    github: "https://github.com/DavidAarya-31/OpenNexus",
+  },
   {
     title: "ForgeAPI",
     description: "ForgeAPI is a AI-powered platform that converts natural language requirements into production-ready APIs. Developed an orchestration pipeline for entity extraction, API code generation, endpoint testing, and OWASP-based security analysis. Implemented a Self-Heal feature for automated vulnerability remediation and integrated GitHub export for seamless deployment.",

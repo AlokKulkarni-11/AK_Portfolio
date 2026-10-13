@@ -2,10 +2,18 @@ import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 
 const DEFAULT_CV_URL =
   "https://drive.google.com/file/d/1pBBGciVsgmbqfCRz67vVHxjlU02OEmAO/view?usp=sharing";
+
+const getDownloadUrl = (url: string) => {
+  const googleDriveFileId = url.match(/drive\.google\.com\/file\/d\/([^/]+)/)?.[1];
+
+  return googleDriveFileId
+    ? `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`
+    : url;
+};
 
 const Hero = () => {
   const [cvUrl, setCvUrl] = useState(DEFAULT_CV_URL);
@@ -77,6 +85,12 @@ const Hero = () => {
           </Button>
           <Button asChild>
             <a href={cvUrl} target="_blank" rel="noopener noreferrer">See CV</a>
+          </Button>
+          <Button variant="secondary" asChild>
+            <a href={getDownloadUrl(cvUrl)}>
+              <Download className="mr-2 h-4 w-4" />
+              Download CV
+            </a>
           </Button>
         </motion.div>
       </div>

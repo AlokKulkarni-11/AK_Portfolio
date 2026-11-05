@@ -23,7 +23,7 @@ const About = () => {
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={true}
-            onContactClick={() => window.open("https://www.linkedin.com/in/alok-kulkarni-499259296/", "_blank")}
+            onContactClick={() => window.open("https://www.linkedin.com/in/alokkulkarni1113/", "_blank")}
             avatarUrl={PROFILE_IMAGE.src}
             miniAvatarUrl="/AK.png"
           />

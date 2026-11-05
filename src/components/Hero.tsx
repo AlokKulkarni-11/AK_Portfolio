@@ -3,6 +3,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ChevronDown, Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode, SiCodechef } from "react-icons/si";
 
 const DEFAULT_CV_URL =
   "https://drive.google.com/file/d/1pBBGciVsgmbqfCRz67vVHxjlU02OEmAO/view?usp=sharing";
@@ -75,15 +77,12 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex gap-4 mt-8"
+          className="flex gap-4 mt-8 flex-wrap justify-center"
         >
           <Button asChild>
-            <a href="#projects">Projects</a>
-          </Button>
-          <Button variant="secondary" asChild>
             <a href="#contact">Contact Me</a>
           </Button>
-          <Button asChild>
+          <Button variant="secondary" asChild>
             <a href={cvUrl} target="_blank" rel="noopener noreferrer">See CV</a>
           </Button>
           <Button variant="secondary" asChild>
@@ -92,6 +91,54 @@ const Hero = () => {
               Download CV
             </a>
           </Button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="flex items-center gap-5 mt-8"
+        >
+          <a
+            href="https://github.com/AlokKulkarni-11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 p-2.5 rounded-full hover:bg-muted/50 border border-transparent hover:border-border"
+            title="GitHub"
+            aria-label="GitHub Profile"
+          >
+            <FaGithub className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alokkulkarni1113/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 p-2.5 rounded-full hover:bg-muted/50 border border-transparent hover:border-border"
+            title="LinkedIn"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin className="w-6 h-6" />
+          </a>
+          <a
+            href="https://leetcode.com/u/Illuminati1113/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 p-2.5 rounded-full hover:bg-muted/50 border border-transparent hover:border-border"
+            title="LeetCode"
+            aria-label="LeetCode Profile"
+          >
+            <SiLeetcode className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.codechef.com/users/illuminati1311"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 p-2.5 rounded-full hover:bg-muted/50 border border-transparent hover:border-border"
+            title="CodeChef"
+            aria-label="CodeChef Profile"
+          >
+            <SiCodechef className="w-6 h-6" />
+          </a>
         </motion.div>
       </div>
       <motion.div

@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode, SiCodechef } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -13,18 +14,37 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
+            title="GitHub"
           >
             <FaGithub className="w-6 h-6" />
           </a>
           <a
-            href="https://www.linkedin.com/in/alok-kulkarni-499259296/"
+            href="https://www.linkedin.com/in/alokkulkarni1113/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
+            title="LinkedIn"
           >
             <FaLinkedin className="w-6 h-6" />
           </a>
-          
+          <a
+            href="https://leetcode.com/u/Illuminati1113/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            title="LeetCode"
+          >
+            <SiLeetcode className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.codechef.com/users/illuminati1311"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            title="CodeChef"
+          >
+            <SiCodechef className="w-6 h-6" />
+          </a>
         </div>
       </div>
     </footer>
